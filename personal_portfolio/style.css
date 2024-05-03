@@ -12,6 +12,7 @@ body {
     color: white;
 }
 
+/* home section css class element */
 h1 {
     font-size: 35px;
 }
@@ -20,7 +21,12 @@ a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.nav_link:hover {
+    color: #00ffee;
+    border-bottom: 2px solid #00ffee;
 }
 
 .primary_button {
@@ -114,8 +120,34 @@ a {
 }
 
 .hero_img:hover {
-    width: 105%;
     box-shadow: #00ffee 0px 0px 200px 4px;
 }
 
 /* box-shadow: #00ffee 0px 5px 50px 4px; */
+/* home section class element end */
+
+
+/* hero service section started */
+.hero_content_headline {
+    text-align: center;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service_box {
+    margin: 15px 10px;
+    padding: 15px 10px;
+    border: 1px solid #00ffee;
+    border-radius: 20px;
+    box-shadow: #00ffee 0px 0px 8px 4px;
+    transition: 1s ease-in-out;
+}
+
+.service_box:hover {
+    background-color: #00ffee;
+    color: black;
+    transform: scaleY(1.1);
+}
