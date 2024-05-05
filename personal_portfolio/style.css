@@ -17,14 +17,26 @@ h1 {
     font-size: 35px;
 }
 
-a {
+.logo_shadow {
+    text-shadow: 0 0 35px #00ffee;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.logo_shadow:hover {
+    transform: scale(1.1);
+}
+
+.nav_link {
     text-decoration: none;
     color: white;
     font-size: 20px;
     margin-left: 10px;
+    border-bottom: 3px solid transparent;
 }
 
-.nav_link:hover {
+.nav_link:hover,
+.nav_link:active {
     color: #00ffee;
     border-bottom: 2px solid #00ffee;
 }
@@ -56,7 +68,7 @@ a {
     padding: 12px 18px;
     border: 1px solid #00ffee;
     border-radius: 10px 25px;
-
+    box-shadow: #00ffee 0px 0px 8px 2px;
     transition: .5s ease-in-out;
 }
 
@@ -95,6 +107,7 @@ a {
 
 .social_icon {
     color: #00ffee;
+    font-size: 20px;
     width: 20px;
     height: 20px;
     margin: 5px 0px;
@@ -166,11 +179,12 @@ a {
     border: 1px solid #00ffee;
     border-radius: 20px;
     box-shadow: #00ffee 0px 0px 8px 4px;
-    transition: 1s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .testimonials_box:hover {
     transform: scale(1.08);
+    box-shadow: #00ffee 0px 0px 20px 4px;
 }
 
 .testimonials_img {
@@ -183,4 +197,29 @@ a {
 
 .testimonials_icon {
     color: #fffb00;
+}
+
+/* contact section */
+.input {
+    width: 160%;
+    height: 40px;
+    color: #00ffee;
+    background-color: #131313;
+    margin: 20px 10px;
+    padding: 10px 10px;
+    border: 2px solid #00ffee;
+    box-shadow: #00ffee 0px 0px 5px 2px;
+    border-radius: 10px;
+}
+
+.text_message {
+    width: 110%;
+    height: 250px;
+    color: #00ffee;
+    background-color: #131313;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 2px solid #00ffee;
+    box-shadow: #00ffee 0px 0px 5px 2px;
+    border-radius: 10px;
 }
